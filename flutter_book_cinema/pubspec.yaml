@@ -35,6 +35,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
+  flutter_shaders: 0.1.2
+  google_fonts: ^4.0.3
+  video_player: 2.9.1
 
 dev_dependencies:
   flutter_test:
@@ -57,6 +60,13 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  shaders:
+    - shaders/page_curl.frag
+
+  assets:
+     - assets/images/blade_runner_poster_standing.png
+     - assets/videos/blade_runner.mp4
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -88,3 +98,11 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
